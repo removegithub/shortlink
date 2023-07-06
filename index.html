@@ -1,8 +1,8 @@
 <script>
-    fetch(`https://63cc45519b72d2a88e0af594.mockapi.io/api/surl`)
+    fetch(`https://63cc45519b72d2a88e0af594.mockapi.io/api/surl/1`)
     .then(res => res.json())
     .then(res => {
         console.log(res);
-        window.location.replace(res[0].uri)
+        window.location.replace(res.uri)
     })
 </script>
